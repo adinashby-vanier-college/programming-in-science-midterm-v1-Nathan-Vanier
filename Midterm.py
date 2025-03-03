@@ -23,7 +23,7 @@ def inverted_pyramid(n):
     result = ""
     for i in range(n, 0 , -1):
         spaces = "" * (i - 1)
-        stars = "*" (2 * n)
+        stars = "*" (2 * n - 2)
     result += spaces + stars + "\n"
 
     
