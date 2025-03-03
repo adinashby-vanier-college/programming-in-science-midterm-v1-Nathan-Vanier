@@ -24,13 +24,13 @@ def inverted_pyramid(n):
     for i in range(n, 0 , -1):
         spaces = "" * (i - 1)
         stars = "*" (2 * n)
-    result += spaces + stars
+    result += spaces + stars + "\n"
 
     
     if n < 3: 
         result += "The pyramid height should be at least 3."
     
-    return result
+    return result.rstrip()
 
 # ----------------------------------------------------------------
 # print(area_of_circle(5))
