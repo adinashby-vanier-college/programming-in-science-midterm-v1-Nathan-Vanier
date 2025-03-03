@@ -7,38 +7,58 @@ def area_of_circle(radius):
 
 # Q2: Hollow Right Triangle
 def hollow_right_triangle(n):
-    return ""
+    result = ""
+    if n > 4:
+        result += "The triangle height should be at least 4."
+    for i in range(1, n + 1):
+        for j in range(1, i + 1):
+            result += "*"
+        result += "\n"
+    return result.rstrip()
+    
+
 
 # Q3: Inverted Pyramid
 def inverted_pyramid(n):
     result = ""
-        for in in range(1, n + 1, -1):
-            
-    return ""
+    for i in range(n, 0 , -1):
+        spaces = "" * (i - 1)
+        stars = "*" (2 * n)
+    result += spaces + stars
+
+    
+    if n < 3: 
+        result += "The pyramid height should be at least 3."
+    
+    return result
 
 # ----------------------------------------------------------------
-print(area_of_circle(5))
-print()
+# print(area_of_circle(5))
+# print()
 
-print(hollow_right_triangle(3))
-print()
+#print(hollw_right_triangle(4))
+n = 5
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print("*", end="")
+    print()
 
-print(hollow_right_triangle(4))
-print()
+# print(hollow_right_triangle(5))
+# print()
 
-print(hollow_right_triangle(5))
-print()
+# print(inverted_pyramid(3))
+# print()
 
-print(inverted_pyramid(3))
-print()
+# print(inverted_pyramid(4))
+# print()
 
-print(inverted_pyramid(4))
-print()
+# print(inverted_pyramid(5))
+# print()ow_right_triangle(3))
+# print()
 
-print(inverted_pyramid(5))
-print()
-n = 6
-for i in range(1, n + 1, -1):
-    print(n)
 
-print ("Hello World")
+
+
+
+
+
